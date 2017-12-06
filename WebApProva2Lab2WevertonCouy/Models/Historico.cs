@@ -7,5 +7,10 @@ namespace WebApProva2Lab2WevertonCouy.Models
 {
     public class Historico
     {
+        public int HistoricoId { get; set; }
+        public string Detalhes { get; set; }
+        public DateTime DataHora { get; set; }
+
+        public List<Protocolo> Protocolos { get; set; }
     }
 }
