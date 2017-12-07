@@ -10,5 +10,6 @@ namespace WebApProva2Lab2WevertonCouy.Models
         public int TramiteId { get; set; }
         public string Descricao{ get; set; }
 
+        public virtual List<Protocolo> Protocolos{ get; set; }
     }
 }

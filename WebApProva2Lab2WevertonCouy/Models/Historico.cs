@@ -11,6 +11,6 @@ namespace WebApProva2Lab2WevertonCouy.Models
         public string Detalhes { get; set; }
         public DateTime DataHora { get; set; }
 
-        public List<Protocolo> Protocolos { get; set; }
+        public virtual List<Protocolo> Protocolos { get; set; }
     }
 }

@@ -1,0 +1,58 @@
+﻿@model WebApProva2Lab2WevertonCouy.Models.Protocolo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Protocolo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aluno.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aluno.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tramite.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tramite.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEntrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEntrada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataSaida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataSaida)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProtocoloId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
